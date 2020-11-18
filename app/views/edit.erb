@@ -1,0 +1,7 @@
+<form method="post" action="/recipes/<%= @recipe.id %>">
+    <input id="hidden" type="hidden" name="_method" value="patch">
+    <input type="text" name="edit[name]" id="name" placeholder="<%= @recipe.name %>"><br/>
+    <input type="text" name="edit[ingredients]" id="ingredients" placeholder="<%= @recipe.ingredients %>"><br/>
+    <input type="text" name="edit[cook_time]" id="cook_time" placeholder="<%= @recipe.cook_time %>"><br/>
+    <input type="submit" value="Submit changes">
+</form>
